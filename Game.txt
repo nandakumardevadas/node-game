@@ -1,0 +1,87 @@
+Server:
+
+Cards:
+
+1. Generate
+2. Shuffle
+3. DrawCards - With Number
+
+Player:
+
+Name:
+Id:
+Cards:
+
+Game:
+
+Id:
+Name:
+Number of Players
+Players array of Object,
+status,
+Message,
+results,
+Cards Object
+
+Board:
+id:
+name,
+maxNoOfPlayers,
+minMatch,
+maxMatch,
+showOffPoint,
+games
+
+
+Client:
+
+Home:
+
+    Login Form:
+        Set Username
+
+    Init Game Rooms on Username
+    Create Room and Join | List of Rooms - Running, Not Started, No of Players
+    Start game - Atleast 2 user and not started and all Users Ready - Leave Room
+    Shuffle and Display Cards
+    Timer to play cards 
+    Draw cards
+    Show Off Button
+    Leave Game
+    End Game - Show Alert on More than 1 Players
+    Annonce Winner
+    ReInit Match
+    Total Points 
+
+
+Player - Login - Create new player
+create game and join: 
+    find player
+    Create board
+    create game
+    add player to game
+    add game to board
+    set board status
+    set game status
+On Game Join - Find player and push to Game in board
+On Minimum players and all ready - Start game
+
+Start game:
+    Set Board status,
+    Set game status,
+    Add Cards
+    create a board and add game to board,
+    Display cards,
+
+Get a card:
+    Draw one card from the current game deck and send it to player
+
+Play card:
+    Check condition and Display card on game area
+
+Show Off:
+    Check Board ShowOff minimum and show the results
+    If results annouced add them to game results with player and score
+    Show Next match start
+
+After Min and max match ended, show final results
