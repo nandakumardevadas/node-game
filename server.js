@@ -13,8 +13,13 @@ const LoginServices = require('./app/services/Login')
 const GameServices = require('./app/services/GameBoard')  
 LoginServices.login('nanda');
 LoginServices.login('nandakumar')
-console.log(global.players);
+//console.log(global.players);
 console.log(GameServices.createBoardAndJoinGame('nanda', 'VSOP'));
+console.log(GameServices.joinToBoardGame('nandakumar', 'VSOP'));
+console.log(GameServices.startNewGame('VSOP'));
+console.log(GameServices.drawOneCard('nanda'));
+
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

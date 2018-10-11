@@ -4,20 +4,21 @@ const STATUS = require('./status');
 
 class Game extends BaseClass {
 
-    constructor(name, noOfPlayers = 1, status = STATUS.GAME_NOT_STARTED, players = [], cards = []) {
+    constructor(name, status = STATUS.GAME_NOT_STARTED) {
         super();
         this.id = this.generateId(2);
         this.name = name;
-        this.noOfPlayers = noOfPlayers;
-        this.players = players;
         this.status = status;
-        this.results = [];
-        this.remainingCards = cards;
+        this.scores = [];
     }
 
     static get playersCount() {
         Game._counter = (Game._counter || 0) + 1;
         return Game._counter;
+    }
+    
+    setStatus(status) {
+        this.status = status;
     }
 
 }

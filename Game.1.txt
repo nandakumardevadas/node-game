@@ -79,7 +79,7 @@ Get a card:
 
 Play card:
     Check condition and Display card on game area
-    
+
 Show Off:
     Check Board ShowOff minimum and show the results
     If results annouced add them to game results with player and score
@@ -89,4 +89,3 @@ After Min and max match ended, show final results
 
 
 // Need to players ready check on start game
-// Socket connection pending for all

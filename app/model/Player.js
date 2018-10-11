@@ -8,7 +8,10 @@ class Player extends BaseClass {
         this.displayName = this.capitalizeFirstLetter(name);
         this.id = this.generateId(2);
         this.cardsInHand = cards;
+        this.score = 0;
         this.status = status;
+        this.isHost = true;
+        this.isOnline = true;
     }
 }
 
